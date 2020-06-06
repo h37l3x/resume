@@ -1,0 +1,47 @@
+<section class="section-intro">
+  <div class="container">
+    <div class="row align-items-center justify-content-center intro">
+      <div class="col-md-10">
+        <h1 class="page-title">Research projects</h1>
+        <p class="page-description">These are projects that I do in my free time for personal development or for
+          the sake of interest to try something new.</p>
+        <a class="go-down"
+           [ngx-scroll-to]="worksList"
+           ngx-scroll-to-offset="-50"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-content portfolio-overlap"
+         #worksList>
+  <div class="container-fluid">
+    <div class="row"
+         *ngIf="items && items.length > 0">
+      <div class="col-md-6 {{item.className}}"
+           *ngFor="let item of items">
+        <a class="project"
+           [routerLink]="item.name">
+          <div class="preview-image">
+            <figure>
+              <img [src]="item.previewImageUrl"
+                   alt="preview image"
+                   class="img-fluid">
+            </figure>
+          </div>
+          <div class="project-hover">
+            <div class="project-hover-inner">
+              <h2>{{item.title}}</h2>
+              <span>{{item.description}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="message-empty"
+      *ngIf="!items || items.length === 0">There is nothing here yet,
+    but I am working on it. My work projects
+    will be here soon</h3>
+</section>

@@ -1,0 +1,107 @@
+<section class="section-intro mb-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center intro">
+      <div class="col-md-10">
+        <h1 class="page-title">
+          Travel blog gallery
+        </h1>
+        <a class="go-down"
+           [ngx-scroll-to]="workInfo"
+           ngx-scroll-to-offset="-50"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-overlap mb-5"
+         #workInfo>
+  <div class="container"
+       data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Goal:</h5>
+            <p class="page-text">
+              The idea was to create a travel blog where the main focus is on photographs
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12 mb-5">
+            <h5>Reason:</h5>
+            <p class="page-text">
+              Often I see some kind of cool sites and there is a desire to make something similar. This is
+              one of them.
+            </p>
+          </div>
+          <div class="col-md-12">
+            <h5>A moment of sadness:</h5>
+            <p class="page-text">
+              Unfortunately, I can’t remember what kind of site it was and it is even more sad that the
+              project sources were lost. But the video was saved how several versions of the project
+              worked
+            </p>
+          </div>
+        </div>
+
+        <h5>Firs version:</h5>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <p>The first version had in my opinion <strong class="text-primary">not very convenient
+                navigation</strong>, because not allowed to
+              move between images except flipping one at a time. </p>
+            <p>There were also <strong class="text-primary">no previews</strong> that would allow you to see
+              the rest of the images, but do not
+              switch to them</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/494ZqZJTXLk"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <h5>Second version:</h5>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/zsqDKcA3Pe8"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p>The second version has <strong class="text-primary">more convenient navigation</strong>,
+              and allows you to <strong class="text-primary">preview other images</strong> </p>
+            <p>I also added some <strong class="text-primary">navigation animations</strong> and <strong
+                      class="text-primary">play/pause button</strong> that will flip images on its own</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h5>Code technologies I got involved with while working on this project:</h5>
+            <ul class="list-inline skills">
+              <li class="list-inline-item skill"><span class="badge badge-primary">Angular 6</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<ngx-image-gallery [images]="images"
+                   [conf]="conf"></ngx-image-gallery>

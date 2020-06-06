@@ -1,0 +1,175 @@
+<section class="section-intro mb-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center intro">
+      <div class="col-md-10">
+        <h1 class="page-title">
+          <a href="https://ohmywrap.ru"
+             target="_blank">Oh-My-Wrap</a>
+        </h1>
+        <p class="page-description">Workshop website where you can create wrapping paper with unique design</p>
+        <a class="go-down"
+           [ngx-scroll-to]="workInfo"
+           ngx-scroll-to-offset="-50"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-overlap mb-5"
+         #workInfo>
+  <div class="container"
+       data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+        <div class="row work-detail mb-5">
+          <div class="col-md-4">
+            <span class=caption>Client</span>
+            <strong>Private entrepreneur</strong>
+          </div>
+          <div class="col-md-4">
+            <span class=caption>role</span>
+            <strong>Lead developer</strong>
+          </div>
+          <div class="col-md-4">
+            <span class=caption>Team</span>
+            <strong><a href="https://vestbery.com"
+                 target="_blank">Vestbery</a></strong>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12 mb-5">
+            <h5>Problem:</h5>
+            <p class="page-text">
+              Сustomers should be able to create their own wrapping paper design through a full cycle
+              from creation to order confirmation and payment
+            </p>
+          </div>
+          <div class="col-md-12">
+            <h5>Solution:</h5>
+            <p class="page-text">
+              A web site that supports functionality of typical online store and an online tool that
+              allows you to quickly and easily create wrapping paper design
+            </p>
+          </div>
+        </div>
+
+        <h5>Project description:</h5>
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <p>Website has the same functionality as <strong class="text-primary">online store</strong>
+              such as <strong class="text-primary">registration, authorization</strong> (via login and
+              password or social networks), <strong class="text-primary">basket</strong>,
+              session state, <strong class="text-primary">payment acceptance</strong> etc.</p>
+            <p>Manager can check orders and download created wrapping paper designs in special format
+              for further processing.</p>
+            <p>Also backoffice allows to <strong class="text-primary">flexibly configure each site element</strong>
+              (texts, images, settings
+              etc.)</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/assets/images/work/ohmywrap/1.png"
+                 alt="website index page"
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(0)">
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-6">
+            <img src="/assets/images/work/ohmywrap/4.png"
+                 alt="website index page"
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(3)">
+          </div>
+          <div class="col-md-6">
+            <p>Wrapping paper creation online tool allows customers to <strong class="text-primary">upload
+                images from their devices or social networks</strong>.
+            </p>
+            <p>Then <strong class="text-primary">easily order, crop</strong> uploaded images
+              if needed. Uploaded images
+              and their
+              state are restored after page reload.</p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h5>On this project i was responsible for:</h5>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Initial backend and frontend <strong class="text-primary">architecture</strong></li>
+              <li><strong class="text-primary">Integration</strong> with major bank (Sberbank) to use
+                their <strong class="text-primary">acquiring system</strong> to handle payments
+                on the website</li>
+              <li><strong class="text-primary">Integration with CMS Umbraco</strong> on the basis of
+                which
+                backoffice is built.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><strong class="text-primary">User authorization and registration</strong> via login and
+                password or via social networks</li>
+              <li><strong class="text-primary">Basket</strong> management and session restoration</li>
+              <li>All the functionality of <strong class="text-primary">online tool of creating wrapping
+                  paper design</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h5>Code technologies I got involved with while working on this project:</h5>
+            <ul class="list-inline skills">
+              <li class="list-inline-item skill"><span class="badge badge-primary">C#</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">ASP.NET MVC</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">CMS Umbraco</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">MS SQL</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">Vue.js</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">HTML</span></li>
+              <li class="list-inline-item skill"><span class="badge badge-primary">CSS</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12 mb-5">
+            <img src="/assets/images/work/ohmywrap/2.png"
+                 alt="website index page"
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(1)">
+          </div>
+          <div class="col-md-12">
+            <img src="/assets/images/work/ohmywrap/3.png"
+                 alt="website index page"
+                 class="img-fluid border cursor-pointer"
+                 (click)="openGallery(2)">
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/V6exaxb2BIo"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center"><a href="https://ohmywrap.ru"
+             target="_blank"
+             class="button button--red mb-5">Visit
+            Website</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<ngx-image-gallery [images]="images"
+                   [conf]="conf"></ngx-image-gallery>

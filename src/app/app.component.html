@@ -1,0 +1,67 @@
+<header class="main-navbar"
+        [class.on-main-page]="onMainPage"
+        [class.on-resume-page]="onResumePage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-9 col-md-3">
+        <div class="site-logo">
+          <a routerLink=""
+             class="animsition-link">Aleksei Vinnikov</a>
+        </div>
+      </div>
+      <div class="col-3 col-md-9 text-right hamburger-wrapper">
+        <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu"
+                type="button"
+                (click)="openMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="main-menu js-main-menu permanent"
+             role="navigation">
+          <ul class="list-unstyled">
+            <li><a routerLink="resume"
+                 class="animsition-link"
+                 routerLinkActive="active">resume</a></li>
+            <li><a routerLink="work"
+                 class="animsition-link"
+                 [class.active]="o.activatedRouteData.state === 'work'">work</a></li>
+            <li><a routerLink="research-projects"
+                 class="animsition-link"
+                 routerLinkActive="active">research-projects</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="main-menu main-menu-w js-main-menu faster"
+     role="navigation"
+     [class.active]="isMenuOpened">
+  <button class="hamburger hamburger--spin toggle-menu ml-auto js-toggle-menu is-active"
+          type="button"
+          (click)="closeMenu()">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <ul class="list-unstyled">
+    <li><a (click)="closeMenu()"
+         routerLink="resume"
+         class="animsition-link"
+         routerLinkActive="active">resume</a></li>
+    <li><a (click)="closeMenu()"
+         routerLink="work"
+         class="animsition-link"
+         [class.active]="o.activatedRouteData.state === 'work'">work</a></li>
+    <li><a (click)="closeMenu()"
+         routerLink="research-projects"
+         class="animsition-link"
+         routerLinkActive="active">research-projects</a></li>
+  </ul>
+</nav>
+<main [@routeAnimations]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
+</main>
