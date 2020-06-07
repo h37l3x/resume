@@ -42,6 +42,7 @@ import { TravelBlogGalleryComponent } from './components/research-projects/child
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
