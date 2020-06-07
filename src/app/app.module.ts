@@ -19,7 +19,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent, SmoothHeightComponent } from './app.component';
+import { AppComponent } from './app.component';
 import { WorkComponent } from './components/work/work.component';
 import { ResearchProjectsComponent } from './components/research-projects/research-projects.component';
 import {
@@ -37,8 +37,7 @@ import { TravelBlogGalleryComponent } from './components/research-projects/child
     TelegramBirthdayNotificationBotComponent,
     TravelBlogGalleryComponent,
     WorkProjectComponent,
-    ResumeComponent,
-    SmoothHeightComponent
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
