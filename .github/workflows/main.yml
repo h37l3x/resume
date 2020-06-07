@@ -33,3 +33,13 @@ jobs:
         with:
           name: deploy_coverage
           path: coverage
+      - name: ftp-deploy
+        if: success()
+        uses: sebastianpopp/ftp-action@v2.0.0
+        with:
+          host: ${{ secrets.FTP_HOST_PROD }}
+          user: ${{ secrets.FTP_USER_PROD }}
+          password: ${{ secrets.FTP_PASSWORD_PROD }}
+          forceSsl: ${{ secrets.FTP_FORCE_SSL }}
+          localDir: ${{ secrets.FTP_LOCAL_DIR_PROD }}
+          remoteDir: ${{ secrets.FTP_REMOTE_DIR_PROD }}
