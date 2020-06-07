@@ -60,7 +60,7 @@ export class AppComponent {
       node.classList.remove('animated', animationName);
       node.removeEventListener('animationend', handleAnimationEnd);
 
-      if (typeof callback === 'function') { callback(); }
+      callback();
     }
 
     node.addEventListener('animationend', handleAnimationEnd);
