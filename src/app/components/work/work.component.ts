@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss']
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent {
   items = [
     {
       name: 'oh-my-wrap',
@@ -15,12 +14,4 @@ export class WorkComponent implements OnInit {
       previewImageUrl: '/assets/images/work/ohmywrap/preview.png'
     }
   ];
-
-  exampleItems = [];
-
-  constructor(private activeRouter: ActivatedRoute) {
-  }
-
-  ngOnInit() {
-  }
 }

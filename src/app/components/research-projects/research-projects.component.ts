@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-research-projects',
   templateUrl: './research-projects.component.html',
   styleUrls: ['./research-projects.component.scss']
 })
-export class ResearchProjectsComponent implements OnInit {
+export class ResearchProjectsComponent {
   items = [
     {
       name: 'telegram-birthday-notification-bot',
@@ -23,12 +22,4 @@ export class ResearchProjectsComponent implements OnInit {
       previewImageUrl: '/assets/images/research-projects/travel-blog-gallery/preview.png'
     }
   ];
-
-  exampleItems = [];
-
-  constructor(private activeRouter: ActivatedRoute) {
-  }
-
-  ngOnInit() {
-  }
 }
