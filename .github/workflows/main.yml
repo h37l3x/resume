@@ -41,4 +41,4 @@ jobs:
           ftp-username: ${{ secrets.FTP_USER_PROD }}
           ftp-password: ${{ secrets.FTP_PASSWORD_PROD }}
           local-dir: ${{ secrets.FTP_LOCAL_DIR_PROD }}
-          git-ftp-args: --insecure
+          git-ftp-args: --insecure --delete
