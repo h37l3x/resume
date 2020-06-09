@@ -35,10 +35,10 @@ jobs:
           path: coverage
       - name: Deploy
         if: success()
-        uses: sebastianpopp/ftp-action@v2.0.0
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          host: ${{ secrets.FTP_HOST_PROD }}
-          user: ${{ secrets.FTP_USER_PROD }}
-          password: ${{ secrets.FTP_PASSWORD_PROD }}
-          forceSsl: ${{ secrets.FTP_FORCE_SSL }}
-          localDir: ${{ secrets.FTP_LOCAL_DIR_PROD }}
+          ftp-server: ${{ secrets.FTP_HOST_PROD }}
+          ftp-username: ${{ secrets.FTP_USER_PROD }}
+          ftp-password: ${{ secrets.FTP_PASSWORD_PROD }}
+          local-dir: ${{ secrets.FTP_LOCAL_DIR_PROD }}
+          git-ftp-args: --insecure
